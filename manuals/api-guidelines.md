@@ -7,7 +7,7 @@
 ## Содержание
 <!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [1 Введение](#1-введение)
+- [1 Введение]
 	- [3.1 Recommended reading](#31-recommended-reading)
 	- [4    Interpreting the guidelines](#4-interpreting-the-guidelines)
 		- [4.1    Application of the guidelines](#41-application-of-the-guidelines)
