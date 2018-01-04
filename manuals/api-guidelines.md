@@ -9,7 +9,7 @@
 
 - [1 Введение](#1-Введение)
 	- [3.1 Recommended reading](#31-recommended-reading)
-	- [Соглашения, используемые в настоящем руководстве](#4-Соглашения,-используемые-в-настоящем-руководстве)
+	- [Соглашения, используемые в документе](#Соглашения,-используемые-в-документе)
 		- [4.1    Application of the guidelines](#41-application-of-the-guidelines)
 		- [4.2    Guidelines for existing services and versioning of services](#42-guidelines-for-existing-services-and-versioning-of-services)
 		- [4.3    Requirements language](#43-requirements-language)
@@ -119,7 +119,7 @@ These guidelines aim to achieve the following:
 *Note: The guidelines are designed to align with building services which comply with the REST architectural style, though they do not address or require building services that follow the REST constraints.
 The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
 
-### Соглашения, используемые в настоящем руководстве
+### Соглашения, используемые в документе
 Ключевые слова уровня требований «ДОЛЖНО», «НЕ ДОЛЖНО», «ТРЕБУЕТСЯ», «ДОЛЖНО», «НЕ ДОЛЖНО», «СЛЕДУЕТ», «НЕ ДОЛЖНО», «РЕКОМЕНДУЕТСЯ», «МОЖЕТ» и «ДОПОЛНИТЕЛЬНО», документ (без учета регистра) должны интерпретироваться, как описано в RFC 2119.
 
 ## 4 Interpreting the guidelines
