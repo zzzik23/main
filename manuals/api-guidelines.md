@@ -4,11 +4,11 @@
 Редакторы документа: Калтаев Азимхан, Туркин Артем<br/>
 </div>
 
-## Table of contents
+## Содержание
 <!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [1 Введение](#1-введение)
-		- [3.1 Recommended reading](#31-recommended-reading)
+	- [3.1 Recommended reading](#31-recommended-reading)
 	- [4    Interpreting the guidelines](#4-interpreting-the-guidelines)
 		- [4.1    Application of the guidelines](#41-application-of-the-guidelines)
 		- [4.2    Guidelines for existing services and versioning of services](#42-guidelines-for-existing-services-and-versioning-of-services)
@@ -98,7 +98,7 @@
 
 <!-- /TOC -->
 
-## 3 Introduction
+## 1 Introduction
 Developers access most Microsoft Cloud Platform resources via HTTP interfaces.
 Although each service typically provides language-specific frameworks to wrap their APIs, all of their operations eventually boil down to HTTP requests.
 Microsoft must support a wide range of clients and services and cannot rely on rich frameworks being available for every development environment.
