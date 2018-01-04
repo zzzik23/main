@@ -9,7 +9,7 @@
 
 - [1 Введение](#1-Введение)
 	- [3.1 Recommended reading](#31-recommended-reading)
-	- [4    Interpreting the guidelines](#4-interpreting-the-guidelines)
+	- [Соглашения, используемые в настоящем руководстве](#4-Соглашения,-используемые-в-настоящем-руководстве)
 		- [4.1    Application of the guidelines](#41-application-of-the-guidelines)
 		- [4.2    Guidelines for existing services and versioning of services](#42-guidelines-for-existing-services-and-versioning-of-services)
 		- [4.3    Requirements language](#43-requirements-language)
@@ -119,17 +119,8 @@ These guidelines aim to achieve the following:
 *Note: The guidelines are designed to align with building services which comply with the REST architectural style, though they do not address or require building services that follow the REST constraints.
 The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
 
-### 3.1 Recommended reading
-Understanding the philosophy behind the REST Architectural Style is recommended for developing good HTTP-based services.
-If you are new to RESTful design, here are some good resources:
-
-[REST on Wikipedia][rest-on-wikipedia] -- Overview of common definitions and core ideas behind REST.
-
-[REST Dissertation][fielding] -- The chapter on REST in Roy Fielding's dissertation on Network Architecture, "Architectural Styles and the Design of Network-based Software Architectures"
-
-[RFC 7231][rfc-7231] -- Defines the specification for HTTP/1.1 semantics, and is considered the authoritative resource.
-
-[REST in Practice][rest-in-practice] -- Book on the fundamentals of REST.
+### Соглашения, используемые в настоящем руководстве
+Ключевые слова уровня требований «ДОЛЖНО», «НЕ ДОЛЖНО», «ТРЕБУЕТСЯ», «ДОЛЖНО», «НЕ ДОЛЖНО», «СЛЕДУЕТ», «НЕ ДОЛЖНО», «РЕКОМЕНДУЕТСЯ», «МОЖЕТ» и «ДОПОЛНИТЕЛЬНО», документ (без учета регистра) должны интерпретироваться, как описано в RFC 2119.
 
 ## 4 Interpreting the guidelines
 ### 4.1 Application of the guidelines
