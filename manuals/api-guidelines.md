@@ -120,7 +120,7 @@ These guidelines aim to achieve the following:
 The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
 
 ### Соглашения, используемые в документе
-Ключевые слова уровня требований «ДОЛЖНО», «НЕ ДОЛЖНО», «ТРЕБУЕТСЯ», «ДОЛЖНО», «НЕ ДОЛЖНО», «СЛЕДУЕТ», «НЕ ДОЛЖНО», «РЕКОМЕНДУЕТСЯ», «МОЖЕТ» и «ДОПОЛНИТЕЛЬНО», документ (без учета регистра) должны интерпретироваться, как описано в RFC 2119.
+Ключевые слова: "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119].
 
 ## 4 Interpreting the guidelines
 ### 4.1 Application of the guidelines
@@ -2191,11 +2191,7 @@ note right of App Server: Update status and cache new "since" token
 
 === End Text ===
 ```
-[fielding]: https://www.ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
-[IANA-headers]: http://www.iana.org/assignments/message-headers/message-headers.xhtml
-[rfc7231-7-1-1-1]: https://tools.ietf.org/html/rfc7231#section-7.1.1.1
-[rfc-7230-3-1-1]: https://tools.ietf.org/html/rfc7230#section-3.1.1
-[rfc-7231]: https://tools.ietf.org/html/rfc7231
+[rfc-2119]: https://github.com/zzzik23/main/blob/master/manuals/RFC2119.md
 [rest-in-practice]: http://www.amazon.com/REST-Practice-Hypermedia-Systems-Architecture/dp/0596805829/
 [rest-on-wikipedia]: http://en.wikipedia.org/wiki/Representational_state_transfer
 [rfc-5789]: http://tools.ietf.org/html/rfc5789
