@@ -98,7 +98,7 @@
 
 <!-- /TOC -->
 
-## 1 Introduction
+## 1 Введение
 Developers access most Microsoft Cloud Platform resources via HTTP interfaces.
 Although each service typically provides language-specific frameworks to wrap their APIs, all of their operations eventually boil down to HTTP requests.
 Microsoft must support a wide range of clients and services and cannot rely on rich frameworks being available for every development environment.
