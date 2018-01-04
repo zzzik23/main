@@ -10,8 +10,8 @@
 - [1 Введение](#1-Введение)
 	- [3.1 Recommended reading](#31-recommended-reading)
 	- [Соглашения, используемые в документе](#Соглашения-используемые-в-документе)
-- [2 Application of the guidelines](#41-application-of-the-guidelines)
-		- [4.2    Guidelines for existing services and versioning of services](#42-guidelines-for-existing-services-and-versioning-of-services)
+- [2 Общие рекомендации](#2-Общие-рекомендации)
+	- [НЕОБХОДИМО: Следуйте принципу API first](#42-guidelines-for-existing-services-and-versioning-of-services)
 		- [4.3    Requirements language](#43-requirements-language)
 		- [4.4    License](#44-license)
 	- [5 Taxonomy](#5-taxonomy)
@@ -49,10 +49,10 @@ These guidelines aim to achieve the following:
 The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
 
 ### Соглашения, используемые в документе
-Ключевые слова: "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119][rfc-2119].
+Ключевые слова "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119][rfc-2119].
 
-## 4 Interpreting the guidelines
-### 4.1 Application of the guidelines
+## 2 Общие рекомендации
+### НЕОБХОДИМО: Следуйте принципу API first
 These guidelines are applicable to any REST API exposed publicly by Microsoft or any partner service.
 Private or internal APIs SHOULD also try to follow these guidelines because internal services tend to eventually be exposed publicly.
  Consistency is valuable to not only external customers but also internal service consumers, and these guidelines offer best practices useful for any service.
