@@ -9,7 +9,7 @@
 
 - [1 Введение](#1-Введение)
 	- [3.1 Recommended reading](#31-recommended-reading)
-	- [Соглашения, используемые в документе](#Соглашения,-используемые-в-документе)
+	- [Соглашения, используемые в документе](#Соглашения-используемые-в-документе)
 		- [4.1    Application of the guidelines](#41-application-of-the-guidelines)
 		- [4.2    Guidelines for existing services and versioning of services](#42-guidelines-for-existing-services-and-versioning-of-services)
 		- [4.3    Requirements language](#43-requirements-language)
