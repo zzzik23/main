@@ -28,6 +28,12 @@
 <!-- /TOC -->
 
 ## 1 Введение
+Данное руководство содержит рекомендации по проектированию REST API, которые были почерпнуты из работы API облачной платформы Heroku, кроме того, оно также содержит информацию о новом функционале и внутреннем API в Heroku.
+
+Нашими основными целями при построении API является соблюдение последовательности и концентрация на реализации бизнес-логики. Мы ищем различные, не обязательно самые лучшие, но хорошо документируемые способы разработки API.
+
+При прочтении данной статьи подразумевается, что вы знакомы с основными принципами HTTP и JSON.
+
 Developers access most Microsoft Cloud Platform resources via HTTP interfaces.
 Although each service typically provides language-specific frameworks to wrap their APIs, all of their operations eventually boil down to HTTP requests.
 Microsoft must support a wide range of clients and services and cannot rely on rich frameworks being available for every development environment.
@@ -47,6 +53,7 @@ These guidelines aim to achieve the following:
 
 *Note: The guidelines are designed to align with building services which comply with the REST architectural style, though they do not address or require building services that follow the REST constraints.
 The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
+В идеале все API должны выглядеть так, как будто их создал один и тот же автор.
 
 ### Соглашения, используемые в документе
 Ключевые слова "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119][rfc-2119].
