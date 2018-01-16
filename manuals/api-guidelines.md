@@ -11,7 +11,7 @@
 	- [3.1 Recommended reading](#31-recommended-reading)
 	- [Соглашения, используемые в документе](#Соглашения-используемые-в-документе)
 - [2. Общие рекомендации](#2-Общие-рекомендации)
-	- [![must](img/must.png) Следуйте принципу API first](#Следуйте-принципу-API-first)
+	- [![must](img/must.png) Следуйте принципу API first](#-Следуйте-принципу-API-first)
 		- [4.3    Requirements language](#43-requirements-language)
 		- [4.4    License](#44-license)
 	- [5 Taxonomy](#5-taxonomy)
@@ -59,7 +59,7 @@ The term "REST" is used throughout this document to mean services that are in th
 Ключевые слова "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119][rfc-2119].
 
 ## 2. Общие рекомендации
-![must](img/must.png) ### Следуйте принципу API first
+### ![must](img/must.png) Следуйте принципу API first
 These guidelines are applicable to any REST API exposed publicly by Microsoft or any partner service.
 Private or internal APIs SHOULD also try to follow these guidelines because internal services tend to eventually be exposed publicly.
  Consistency is valuable to not only external customers but also internal service consumers, and these guidelines offer best practices useful for any service.
