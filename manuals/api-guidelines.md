@@ -11,7 +11,7 @@
 	- [3.1 Recommended reading](#31-recommended-reading)
 	- [Соглашения, используемые в документе](#Соглашения-используемые-в-документе)
 - [2. Общие рекомендации](#2-Общие-рекомендации)
-	- [![must](img/must.png) Следуйте принципу API first](#-Следуйте-принципу-API-first)
+	- [![must](img/must.png) Следуйте принципу API first](#-следуйте-принципу-api-first)
 		- [4.3    Requirements language](#43-requirements-language)
 		- [4.4    License](#44-license)
 	- [5 Taxonomy](#5-taxonomy)
