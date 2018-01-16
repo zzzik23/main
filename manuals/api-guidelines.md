@@ -7,11 +7,11 @@
 ## Содержание
 <!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 
-- [1 Введение](#1-Введение)
+- [1. Введение](#1-Введение)
 	- [3.1 Recommended reading](#31-recommended-reading)
 	- [Соглашения, используемые в документе](#Соглашения-используемые-в-документе)
-- [2 Общие рекомендации](#2-Общие-рекомендации)
-	- [![must](img/must.png): Следуйте принципу API first](#42-guidelines-for-existing-services-and-versioning-of-services)
+- [2. Общие рекомендации](#2-Общие-рекомендации)
+	- [![must](img/must.png) Следуйте принципу API first](#42-guidelines-for-existing-services-and-versioning-of-services)
 		- [4.3    Requirements language](#43-requirements-language)
 		- [4.4    License](#44-license)
 	- [5 Taxonomy](#5-taxonomy)
@@ -27,7 +27,7 @@
 
 <!-- /TOC -->
 
-## 1 Введение
+## 1. Введение
 Данное руководство содержит рекомендации по проектированию REST API, которые были почерпнуты из работы API облачной платформы Heroku, кроме того, оно также содержит информацию о новом функционале и внутреннем API в Heroku.
 
 Нашими основными целями при построении API является соблюдение последовательности и концентрация на реализации бизнес-логики. Мы ищем различные, не обязательно самые лучшие, но хорошо документируемые способы разработки API.
@@ -58,7 +58,7 @@ The term "REST" is used throughout this document to mean services that are in th
 ### Соглашения, используемые в документе
 Ключевые слова "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119][rfc-2119].
 
-## 2 Общие рекомендации
+## 2. Общие рекомендации
 ### **НЕОБХОДИМО**: Следуйте принципу API first
 These guidelines are applicable to any REST API exposed publicly by Microsoft or any partner service.
 Private or internal APIs SHOULD also try to follow these guidelines because internal services tend to eventually be exposed publicly.
