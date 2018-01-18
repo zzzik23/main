@@ -55,6 +55,11 @@ These guidelines aim to achieve the following:
 The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
 В идеале все API должны выглядеть так, как будто их создал один и тот же автор.
 
+При создании документа были использованы следующие материалы:
+- [Zalando RESTful API and Event Scheme Guidelines](https://github.com/zalando/restful-api-guidelines)
+- [Microsoft REST API Guidelines](https://github.com/Microsoft/api-guidelines)
+- [Центр архитектуры Azure](https://docs.microsoft.com/ru-ru/azure/architecture/)
+
 ### Соглашения, используемые в документе
 Ключевые слова "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119][rfc-2119].
 
