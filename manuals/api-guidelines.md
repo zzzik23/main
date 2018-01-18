@@ -11,7 +11,9 @@
 	- [Соглашения, используемые в документе](#Соглашения-используемые-в-документе)
 - [2. Общие рекомендации](#2-Общие-рекомендации)
 	- [![must](img/must.png) Придерживайтесь принципа API first](#-Придерживайтесь-принципа-api-first)
-		- [4.3    Requirements language](#43-requirements-language)
+	- [![must](img/must.png) Предоставляйте спецификацию API с помощью OpenAPI](#-Предоставляйте-спецификацию-api-с-помощью-openapi)
+	- [![should](img/should.png) Предоставляйте руководство пользователя API](#-Предоставляйте-руководство-пользователя-api)
+	- [![must](img/must.png) Пишите API на английском языке](#-Пишите-api-на-английском-языке)
 
 <!-- /TOC -->
 
@@ -85,5 +87,6 @@ The API specification files should be subject to version control using a source 
 
 The user manual must be published online, e.g. via GHE pages, on specific team web servers, or as a Google doc. Please do not forget to include a link to the API user manual into the API specification using the #/externalDocs/url property.
 
+### ![must](img/must.png) Пишите API на английском языке
 
 [rfc-2119]: https://github.com/zzzik23/main/blob/master/manuals/RFC2119.md
