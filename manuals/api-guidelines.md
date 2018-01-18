@@ -53,6 +53,8 @@ The term "REST" is used throughout this document to mean services that are in th
 Ключевые слова "НЕОБХОДИМО", "НЕДОПУСТИМО", "ТРЕБУЕТСЯ", "НУЖНО", "НЕ ПОЗВОЛЯЕТСЯ", "СЛЕДУЕТ", "НЕ СЛЕДУЕТ", "РЕКОМЕНДУЕТСЯ", "НЕ РЕКОМЕНДУЕТСЯ", "ВОЗМОЖНО" и "НЕОБЯЗАТЕЛЬНО" в данном документе (без учета регистра) интерпретируются в соответствии с [RFC 2119][rfc-2119].
 
 ## 2. Общие рекомендации
+Заголовки отмечены соответствующими метками: ![НЕОБХОДИМО](img/must.png), ![СЛЕДУЕТ](img/should.png), ![ВОЗМОЖНО](img/may.png).
+
 ### ![must](img/must.png) Придерживайтесь принципа API first
 Как уже упоминалось во введении, API First является одним из основных принципов проектирования и архитектуры. В двух словах API First требует два аспекта:
 - в первую очередь определение API за пределами кода, используя стандартный язык спецификации
@@ -69,13 +71,13 @@ The term "REST" is used throughout this document to mean services that are in th
 
 Важно понять, что API First не противоречит гибким принципам разработки. Сервисные приложения должны развиваться постепенно - и, следовательно, их API тоже. Конечно, спецификация API будет и должна развиваться итеративно в разные циклы; однако каждый из них начинается с загатовки (драфта) и ранней обратной связи команды и экспертов. API может измениться и улучшиться посредством замечаний, возникших в процессе реализации и результатов автоматического тестирования. Развитие API в течение жизненного цикла разработки может включать в себя изменения ломающие обратную совместимость для еще не выведенных в продуктив функций только при согласовании изменений с клиентами. Следовательно, API First не означает, что вы должны иметь 100%-ное понимание домена и требований, и никогда не сможете создавать код до того, как вы определите полный API и подтвердите его экспертным review. С другой стороны, API First, очевидно, противоречит плохой практике публикации API и запроса экспертной оценки после интеграции сервиса или даже после вывода сервиса в продуктив. Крайне важно запросить и получить раннюю обратную связь - как можно раньше, но не до того, как изменения API будут всесторонними с уделением особого внимания следующему шагу эволюции и будут иметь определенное качество (включая соответствие требованиям API), уже подтвержденное внутренними review команды.
 
-### 4.2 Guidelines for existing services and versioning of services
-We do not recommend making a breaking change to a service that pre-dates these guidelines simply for compliance sake.
-The service SHOULD try to become compliant at the next version release when compatibility is being broken anyway.
-When a service adds a new API, that API SHOULD be consistent with the other APIs of the same version.
-So if a service was written against version 1.0 of the guidelines, new APIs added incrementally to the service SHOULD also follow version 1.0. The service can then upgrade to align with the latest version of the guidelines at the service's next major release.
+### ![must](img/must.png) Предоставляйте спецификацию API с помощью OpenAPI
+Используйте [спецификацию OpenAPI](https://swagger.io/specification) (также известное как Swagger) в качестве стандарта для определения файлов спецификаций API. Разработчики API должны предоставлять файлы спецификаций API с помощью YAML или JSON для повышения удобочитаемости.
 
-### 4.3 Requirements language
+The API specification files should be subject to version control using a source code management system - best together with the implementing sources. The API specifications of component external APIs must be published and marked with the intended target audience.
+
+### ![should](img/should.png) Предоставляйте руководство пользователя API
+
 The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
 
 
