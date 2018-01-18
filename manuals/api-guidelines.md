@@ -8,7 +8,6 @@
 <!-- TOC depthFrom:1 depthTo:2 withLinks:1 updateOnSave:1 orderedList:0 -->
 
 - [1. Введение](#1-Введение)
-	- [3.1 Recommended reading](#31-recommended-reading)
 	- [Соглашения, используемые в документе](#Соглашения-используемые-в-документе)
 - [2. Общие рекомендации](#2-Общие-рекомендации)
 	- [![must](img/must.png) Придерживайтесь принципа API first](#-Придерживайтесь-принципа-api-first)
