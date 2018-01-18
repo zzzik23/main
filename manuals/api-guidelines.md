@@ -27,7 +27,7 @@
 <!-- /TOC -->
 
 ## 1. Введение
-Данное руководство содержит рекомендации по проектированию REST API, которые были почерпнуты из работы API облачной платформы Heroku, кроме того, оно также содержит информацию о новом функционале и внутреннем API в Heroku.
+Данное руководство содержит рекомендации по проектированию REST API для разработчиков ИТ Блока ХБ.
 
 Нашими основными целями при построении API является соблюдение последовательности и концентрация на реализации бизнес-логики. Мы ищем различные, не обязательно самые лучшие, но хорошо документируемые способы разработки API.
 
@@ -52,6 +52,7 @@ These guidelines aim to achieve the following:
 
 *Note: The guidelines are designed to align with building services which comply with the REST architectural style, though they do not address or require building services that follow the REST constraints.
 The term "REST" is used throughout this document to mean services that are in the spirit of REST rather than adhering to REST by the book.*
+
 В идеале все API должны выглядеть так, как будто их создал один и тот же автор.
 
 При создании документа были использованы следующие материалы:
@@ -64,13 +65,20 @@ The term "REST" is used throughout this document to mean services that are in th
 
 ## 2. Общие рекомендации
 ### ![must](img/must.png) Придерживайтесь принципа API first
-These guidelines are applicable to any REST API exposed publicly by Microsoft or any partner service.
-Private or internal APIs SHOULD also try to follow these guidelines because internal services tend to eventually be exposed publicly.
- Consistency is valuable to not only external customers but also internal service consumers, and these guidelines offer best practices useful for any service.
+Как уже упоминалось во введении, API First является одним из основных принципов проектирования и архитектуры. В двух словах API First требует два аспекта:
+- в первую очередь определение API за пределами кода, используя стандартный язык спецификации
+- получение ранней обратной связи от экспертов и клиентов-разработчиков
 
-There are legitimate reasons for exemption from these guidelines.
-Obviously a REST service that implements or must interoperate with some externally defined REST API must be compatible with that API and not necessarily these guidelines.
-Some services MAY also have special performance needs that require a different format, such as a binary protocol.
+Определяя API за пределами кода, мы хотим облегчить раннюю обратную связь, а также дисциплину развития, которая фокусирует дизайн интерфейса сервиса на ...
+- глубоком понимании домена и требуемых функциональных возможностей
+- обобщении бизнес сущностей/ресурсов, т.е. избегание использования специфичных API (для конкретного случая)
+- четком разделении проблем ЧТО и КАК, т.е. абстрагирование от аспектов реализации. API должны быть стабильными, даже если мы полностью заменим реализацию сервиса, включая ее базовый стек технологий
+
+Кроме того, описания API со стандартизованным форматом спецификации также способствует обеспечению ...
+- единственного источника истины для спецификации API; это ключевая часть контракта между поставщиком услуг и клиентами
+- инфраструктурного инструментария для обнаружения API, API GUI, документирования API, автоматической проверки качества
+
+Важно понять, что API First не противоречит гибким принципам развития. Сервисные приложения должны развиваться постепенно - и, следовательно, их API тоже. Конечно, спецификация API будет и должна развиваться итеративно в разные циклы; однако каждый из них начинается с загатовки (драфта) и ранней обратной связи команды и экспертов. API может измениться и улучшиться посредством рекомендаций, возникших в процессе реализации и результатов автоматического тестирования. Развитие API в течение жизненного цикла разработки может включать в себя нарушение изменений для еще не производительных функций и до тех пор, пока мы согласовали изменения с клиентами. Следовательно, API First не означает, что вы должны иметь 100%-ное понимание домена и требований, и никогда не сможете создавать код до того, как вы определите полный API и подтвердите его экспертным review. С другой стороны, API First, очевидно, находится в противоречии с плохой практикой публикации определения API и запроса экспертной оценки после интеграции службы или даже с эффективной производственной операцией. Крайне важно запросить и получить раннюю обратную связь - как можно раньше, но не до того, как изменения API будут всесторонними с уделением особого внимания следующему шагу эволюции и будут иметь определенное качество (включая соответствие требованиям API), уже подтвержденное с помощью внутренними review команды.
 
 ### 4.2 Guidelines for existing services and versioning of services
 We do not recommend making a breaking change to a service that pre-dates these guidelines simply for compliance sake.
