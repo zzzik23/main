@@ -77,8 +77,13 @@ The term "REST" is used throughout this document to mean services that are in th
 The API specification files should be subject to version control using a source code management system - best together with the implementing sources. The API specifications of component external APIs must be published and marked with the intended target audience.
 
 ### ![should](img/should.png) Предоставляйте руководство пользователя API
+В дополнение к спецификации API, хорошей практикой является предоставление руководства пользователя API для улучшения опыта работы с клиентами, особенно тех инженеров, которые менее опытны в использовании этого API. Полезное руководство пользователя API обычно описывает следующие аспекты API:
+- область применения, назначение и варианты использования API
+- конкретные примеры использования API
+- граничные условия, информация об ошибках и рекомендации по их устранению
+- контекст архитектуры и основные зависимости - включая рисунки и последовательности потоков
 
-The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in [RFC 2119](https://www.ietf.org/rfc/rfc2119.txt).
+The user manual must be published online, e.g. via GHE pages, on specific team web servers, or as a Google doc. Please do not forget to include a link to the API user manual into the API specification using the #/externalDocs/url property.
 
 
 [rfc-2119]: https://github.com/zzzik23/main/blob/master/manuals/RFC2119.md
